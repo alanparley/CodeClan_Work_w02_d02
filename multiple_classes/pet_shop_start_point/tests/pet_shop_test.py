@@ -48,7 +48,7 @@ class TestPetShop(unittest.TestCase):
         self.pet_shop.remove_pet(self.pet_1)
         self.assertEqual(1, self.pet_shop.stock_count())
 #9
-    @unittest.skip("delete this line to run the test")
+
     def test_can_find_pet_by_name(self):
         pet = self.pet_shop.find_pet_by_name("Sir Percy")
         self.assertEqual("Sir Percy", pet.name)
