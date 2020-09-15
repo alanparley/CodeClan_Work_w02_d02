@@ -24,10 +24,13 @@ class PetShop:
 #9
     def find_pet_by_name(self, name_of_pet):
         for any_pet in self.pets:
-            if any_pet.name == name_of_pet:
+            if any_pet.name == name_of_pet:         # KEEP VARIABLE NAME (any_pet) CONSISTANT!
                 return any_pet
-
-
+#10
+    def sell_pet_to_customer(self, pet_name, customer):
+        pet_to_sell = self.find_pet_by_name(pet_name)          # call a method from this class on a variable! Then pass it the input required from the method declaration.
+        customer.add_pet(pet_to_sell)
+        
 
 
 # do you need to use a return?

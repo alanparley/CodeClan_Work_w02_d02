@@ -54,13 +54,14 @@ class TestPetShop(unittest.TestCase):
     def test_can_find_pet_by_name(self):
         pet = self.pet_shop.find_pet_by_name("Sir Percy")
         self.assertEqual("Sir Percy", pet.name)    # need to return the entire pet object so that the .name can be run on it in the check
-# work until here
-#10
-    @unittest.skip("delete this line to run the test")
+# work until here and #10 will be done with class
+#10 - this is an integration test, the other ones were unit tests. unit tests stests for the smallest pieces only.
+
     def test_can_sell_pet_to_customer(self):
-        customer = Customer("Jack Jarvis", 1000)
-        self.pet_shop.sell_pet_to_customer("Sir Percy", customer)
-        self.assertEqual(1, customer.pet_count())
+        customer = Customer("Jack Jarvis", 1000)                        # this is the only test which needs a customer which is why the customer is being set within this test and not in the original setup
+        self.pet_shop.sell_pet_to_customer("Sir Percy", customer)       # this is the method to write # these are the four things that should then happen
+        self.assertEqual(1, customer.pet_count())                       
         self.assertEqual(1, self.pet_shop.stock_count())
         self.assertEqual(1, self.pet_shop.pets_sold)
         self.assertEqual(1500, self.pet_shop.total_cash)
+        # no check on the customers cash going down

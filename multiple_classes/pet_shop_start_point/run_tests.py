@@ -6,3 +6,7 @@ from tests.pet_shop_test import TestPetShop
 
 if __name__ == '__main__':
     unittest.main()
+
+
+# tests run in random order but the assertions within each test run in order. This helps when debugging ssertion by asseration.
+
