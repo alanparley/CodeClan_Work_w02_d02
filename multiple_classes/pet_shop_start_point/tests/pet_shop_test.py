@@ -32,7 +32,7 @@ class TestPetShop(unittest.TestCase):
         self.pet_shop.increase_pets_sold()              
         self.assertEqual(1, self.pet_shop.pets_sold)
 #6
-    @unittest.skip("delete this line to run the test")
+
     def test_can_increase_total_cash(self):
         self.pet_shop.increase_total_cash(500)
         self.assertEqual(1500, self.pet_shop.total_cash)
