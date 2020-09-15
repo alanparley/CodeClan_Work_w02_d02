@@ -16,7 +16,10 @@ class PetShop:
     def increase_total_cash(self, cash_transaction):
         self.total_cash += cash_transaction
 
-    def add_pet(self, new_pet_addition):
-        self.pets.append(new_pet_addition)
+    def add_pet(self, pet_to_add):
+        self.pets.append(pet_to_add)
+
+    def remove_pet(self, pet_to_remove):
+        self.pets.remove(pet_to_remove)
 
     

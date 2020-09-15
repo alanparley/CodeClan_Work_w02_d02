@@ -43,7 +43,7 @@ class TestPetShop(unittest.TestCase):
         self.pet_shop.add_pet(new_pet)
         self.assertEqual(3, self.pet_shop.stock_count())
 #8
-    @unittest.skip("delete this line to run the test")
+
     def test_can_remove_pet_from_stock(self):
         self.pet_shop.remove_pet(self.pet_1)
         self.assertEqual(1, self.pet_shop.stock_count())
