@@ -23,7 +23,7 @@ class TestPetShop(unittest.TestCase):
     def test_pet_shop_pets_sold_starts_at_0(self):
         self.assertEqual(0, self.pet_shop.pets_sold)
 #4
-    @unittest.skip("delete this line to run the test")
+#stock_count is a method with no arguments passed
     def test_pet_shop_stock_count(self):
         self.assertEqual(2, self.pet_shop.stock_count())
 #5
