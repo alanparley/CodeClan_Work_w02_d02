@@ -23,5 +23,5 @@ class Bus:
 
     def pickup_at_bus_stop(self, bus_stop_1):
         self.pickup(bus_stop.queue())
-        bus_stop.queue.clear()
-        
+        bus_stop_1.clear.bus_stop()
+
