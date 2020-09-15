@@ -23,13 +23,13 @@ class TestPetShop(unittest.TestCase):
     def test_pet_shop_pets_sold_starts_at_0(self):
         self.assertEqual(0, self.pet_shop.pets_sold)
 #4
-#stock_count is a method with no arguments passed
+#stock_count is a method with no arguments passed - it is checking that the number of entries in the list of pets is 2.
     def test_pet_shop_stock_count(self):
         self.assertEqual(2, self.pet_shop.stock_count())
 #5
-    @unittest.skip("delete this line to run the test")
+# the method increase_pets_sold() doesnt take an arguement so will cause default increase by 1
     def test_increase_pets_sold(self):
-        self.pet_shop.increase_pets_sold()              # doesnt take an arguement so will always increase by 1
+        self.pet_shop.increase_pets_sold()              
         self.assertEqual(1, self.pet_shop.pets_sold)
 #6
     @unittest.skip("delete this line to run the test")

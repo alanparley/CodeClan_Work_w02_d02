@@ -10,3 +10,7 @@ class PetShop:
     def stock_count(self,):
         return len(self.pets)
     
+    def increase_pets_sold(self,):
+        self.pets_sold += 1
+
+    
