@@ -37,7 +37,7 @@ class TestPetShop(unittest.TestCase):
         self.pet_shop.increase_total_cash(500)
         self.assertEqual(1500, self.pet_shop.total_cash)
 #7
-    @unittest.skip("delete this line to run the test")
+
     def test_can_add_pet_to_stock(self):
         new_pet = Pet("Lancelot", "dog", "Basset Hound", 750)
         self.pet_shop.add_pet(new_pet)
