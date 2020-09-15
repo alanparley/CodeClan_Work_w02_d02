@@ -8,4 +8,3 @@ class BusStop:
 
     def clear_bus_stop(self):
         self.queue.clear
-        
