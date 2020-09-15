@@ -10,5 +10,16 @@ class Customer:                         # capitalisation of the start of the cla
 
 
     def add_pet(self, added_pet):
-        self.pets.append(added_pet)
+        self.pets.append(added_pet)     # no return statement required because this method is adding a pet to the pets list and the test checks the list.
+
+    def get_total_value_of_pets(self):  # we dont need any parameters because all of the information that we need for the method is in the class the method is in. We need additional parameters if we need data from outside the class. External data becomes part of the costomer class once it is brought in as a prameter for the method.
+        total = 0
+        for pet in self.pets:
+            total += pet.price
+
+        return total
+
+    
+
+
 
