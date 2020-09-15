@@ -13,4 +13,7 @@ class PetShop:
     def increase_pets_sold(self,):
         self.pets_sold += 1
 
+    def increase_total_cash(self, cash_transaction):
+        self.total_cash += cash_transaction
+
     
