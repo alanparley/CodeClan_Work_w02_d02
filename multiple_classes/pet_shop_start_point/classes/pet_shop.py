@@ -29,13 +29,19 @@ class PetShop:
 #10
     def sell_pet_to_customer(self, pet_name, customer):
         pet_to_sell = self.find_pet_by_name(pet_name)          # call a method from this class on a variable! Then pass it the input required from the method declaration.
-        customer.add_pet(pet_to_sell)
-        
+        customer.add_pet(pet_to_sell)                           # no self. on customer because self. only refers to the class that we are currently in, customer comes from outside and so we dont need self.
+        self.remove_pet(pet_to_sell)                           # invoking the earlier method in the class
+        self.increase_pets_sold()
+        self.increase_total_cash(pet_to_sell.price)             # we only have access to .price here because we erlier run the method find_pet_by_name which found the pet and loaded in its details including the price.
 
 
+
+
+# NOTES:
 # do you need to use a return?
 # if  functions job is to bring back data, its a return
 # if the job o the function is to chane something, we dont need a return
 # if you GET something, youll almost certianlyhave to RETURN something
 # eg increase pets sold isnt a get, so its a change to something and no need to return - practice makes perfect.
 
+# dont jusst add things into the initialisation method because the methods that you write are doorways by way of which things from outside the clas can be brought in for use. keep the initialisation data to things which are native to the class in which they belong.
