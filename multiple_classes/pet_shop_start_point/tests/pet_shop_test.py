@@ -15,7 +15,7 @@ class TestPetShop(unittest.TestCase):
     def test_pet_shop_has_name(self):
         self.assertEqual("Camelot of Pets", self.pet_shop.name)
 
-    @unittest.skip("delete this line to run the test")
+
     def test_pet_shop_cash(self):
         self.assertEqual(1000, self.pet_shop.total_cash)
 #2
