@@ -19,10 +19,10 @@ class Customer:                         # capitalisation of the start of the cla
         total = 0
         for pet in self.pets:
             # pet == self.customer.pets[0]
-            print("PRINT", pet.name)
-            print("PRINT", pet.type)
-            print("PRINT", pet.breed)
-            print("PRINT", pet.price)
+            #print("PRINT", pet.name)
+            #print("PRINT", pet.type)
+            #print("PRINT", pet.breed)
+            #print("PRINT", pet.price)
 
             total += pet.price
 
