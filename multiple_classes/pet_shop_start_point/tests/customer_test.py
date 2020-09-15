@@ -4,7 +4,7 @@ from classes.customer import Customer
 from classes.pet import Pet
 
 class TestCustomer(unittest.TestCase):
-    def setUp(self):
+    def setUp(self):                                                # these are the values set to the various data at the start of the program and the values to which they will be reset after each test.
         self.customer = Customer("Jack Jarvis", 1000)
         self.pet =  Pet("Blue", "cat", "British Shorthair", 500)
 
@@ -14,11 +14,11 @@ class TestCustomer(unittest.TestCase):
     def test_customer_has_cash(self):
         self.assertEqual(1000, self.customer.cash)
 
-    @unittest.skip("delete this line to run the test")
-    def test_pets_start_at_0(self):
-        self.assertEqual(0, self.customer.pet_count())
 
-    @unittest.skip("delete this line to run the test")
+    def test_pets_start_at_0(self):
+        self.assertEqual(0, self.customer.pet_count())              # this means that the pet_count property for he self.customer should be a list and the return from that list length shuld be zero
+
+
     def test_can_add_pet(self):
         self.customer.add_pet(self.pet)
         self.assertEqual(1, self.customer.pet_count())
